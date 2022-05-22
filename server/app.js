@@ -21,6 +21,11 @@ app.use(router);
 dotenv.config({ path: "config.env" });
 const PORT = process.env.PORT || 3000;
 
+// serving static file front-end fro deployement in heroku
+if(process.env.NODE_ENV === "production"){
+  app.use(express.static("student/build"))
+}
+
 // here i am making the server listen
 app.listen(PORT, () => {
   console.log(`SERVER IS STARTED ON http://localhost:${PORT}`);
