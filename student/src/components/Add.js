@@ -55,7 +55,7 @@ export const Add = () => {
 
     //IF DATA IS EMPTY
     if (res.status === 422 || !data) {
-      alert("ERROR");
+      alert("ERROR: STUDENT WITH THIS ID OR E-MAIL MAY ALREADY EXIST");
       console.log("ERROR");
     }
     // IF DATA IS FILLED PROPERLY
