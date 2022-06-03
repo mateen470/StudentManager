@@ -6,10 +6,12 @@ const user = require("./models/schema");
 const cors = require("cors");
 const router = require("./routes/router");
 
+
 require("./DB/connection");
 
 // creating express app
 const app = express();
+
 
 // using a middleware for cors, json format and router
 app.use(cors());

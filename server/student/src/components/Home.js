@@ -8,7 +8,7 @@ export const Home = () => {
 
   // ASYNC getData FUNCTION WITH GET METHOD TO VALIDATE AND SHOW THE DATA ON HOME PAGE
   const getData = async (e) => {
-    const res = await fetch("http://localhost:3000/show", {
+    const res = await fetch("https://studentmanager470.herokuapp.com/show", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

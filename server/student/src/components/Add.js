@@ -36,7 +36,7 @@ export const Add = () => {
     const { name, id, department, semester, email } = val;
 
     // HERE FETCH METHOD IS BEING USED AND WE ARE USING POST METHOD T9 SEND DATA BACK TO SERVER
-    const res = await fetch("http://localhost:3000/add", {
+    const res = await fetch("https://studentmanager470.herokuapp.com/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

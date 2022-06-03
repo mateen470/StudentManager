@@ -34,7 +34,7 @@ export const Update = () => {
   // BECAUSE WE WANT TO SHOW THE DATA IN THE FORM WHICH IS ALREADY EXISTING AND SETINP
   // ALREADY HAS THAT PREVIOUS DATA STORED
   const Update = async () => {
-    const res = await fetch(`http://localhost:3000/view/${id}`, {
+    const res = await fetch(`https://studentmanager470.herokuapp.com/view/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

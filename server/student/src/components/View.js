@@ -34,7 +34,7 @@ export const View = () => {
 
   // THIS FUNCTION IS BASICALLY TO DELETE THE USER
   const delUser = async (id) => {
-    const res2 = await fetch(`http://localhost:3000/delete/${id}`, {
+    const res2 = await fetch(`https://studentmanager470.herokuapp.com/delete/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
